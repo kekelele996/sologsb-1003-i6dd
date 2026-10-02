@@ -34,7 +34,7 @@ export const parseMarkdown = (markdown: string): Segment[] => {
     kind: segmentKind(block.text, block.code),
     sourceText: block.text,
     targetText: '',
-    status: 'draft' as const,
+    status: 'pending' as const,
     protectedTokens: extractProtected(block.text),
     note: '',
   }))
